@@ -9,7 +9,7 @@ if (sessionStorage.getItem("loggedKey") != null){
     logClass.logged = JSON.parse(sessionStorage.getItem("loggedKey"));
     if (logClass.logged == true){
         console.log("???")
-        window.open("../profile.html", '_self')
+        window.open("profile.html", '_self')
     }
     else{
         logClass.logged = -1;
@@ -33,7 +33,7 @@ document.getElementById("loginForm").onsubmit = function (e){
     if(eVal == "admin" && pVal == "admin"){
         logClass.logged = 500;
         sessionStorage.setItem("loggedKey", 500);
-        window.open("../management.html", '_self');
+        window.open("management.html", '_self');
         return false;
     }
     for (let i = 0; i < arr.length; i++){
@@ -41,7 +41,7 @@ document.getElementById("loginForm").onsubmit = function (e){
             if (pVal == arr[i].pass){
                 logClass.logged = i;
                 sessionStorage.setItem("loggedKey", i);
-                window.open("../index.html", '_self');
+                window.open("index.html", '_self');
             }
             else{
                 window.alert("Invalid Email or Password");
@@ -54,5 +54,5 @@ document.getElementById("loginForm").onsubmit = function (e){
 }    
 
 document.getElementById("reg").addEventListener("click", function(){
-    window.open("../register.html", '_self');
+    window.open("register.html", '_self');
 });
