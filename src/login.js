@@ -23,6 +23,9 @@ else{
 
 let tempItemString = sessionStorage.getItem("arrObjKey");
 let arr = JSON.parse(tempItemString);
+if(arr == null){
+    window.open("members.html", '_self')
+}
 //console.log(arr);
 
 document.getElementById("loginForm").onsubmit = function (e){
