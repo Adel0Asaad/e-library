@@ -47,7 +47,7 @@ export function generate_book_dbase(){
         }
         
         for(let j = 0; j<5; j++){
-            let book = new Book(importArr[j].Name, importArr[j].Desc, importArr[j].Genre, importArr[j].Author, importArr[j].Index, importArr[j].Date)
+            let book = new Book(importArr[j].Name, importArr[j].Desc, importArr[j].Genre.toLowerCase(), importArr[j].Author, importArr[j].Index, importArr[j].Date)
             gArr[i][j] = book
         }
     
