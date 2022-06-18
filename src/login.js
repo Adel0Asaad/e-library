@@ -3,13 +3,20 @@ class logClass {
     static logged = -1;
 }
 
-
-if (sessionStorage.getItem("loggedKey") != null){
-    console.log("setting to true")
-    logClass.logged = JSON.parse(sessionStorage.getItem("loggedKey"));
-    if (logClass.logged == true){
-        console.log("???")
-        window.open("profile.html", '_self')
+logClass.logged = JSON.parse(sessionStorage.getItem("loggedKey"));
+console.log(logClass.logged)
+if (logClass.logged != null){
+    console.log("Already been in login")
+    
+    if (logClass.logged != -1){
+        let logOutConfirm = window.confirm("Do you want to logout?")
+        if(logOutConfirm){
+            sessionStorage.setItem("loggedKey", -1)
+            logClass.logged = -1;
+            window.open("profile.html", '_self')
+        }else{
+            window.open("profile.html", '_self')
+        }
     }
     else{
         logClass.logged = -1;
@@ -25,11 +32,21 @@ let tempItemString = sessionStorage.getItem("arrObjKey");
 let arr = JSON.parse(tempItemString);
 console.log(arr)
 if(arr == null){
+    sessionStorage.setItem("preEmptionKey", 3)
     window.open("members.html", '_self')
+}else{
+            if(arr.length == 0){
+                console.log("hello")
+                window.alert("There are currently no registered members, please register!")
+                window.open("register.html", '_self')
+            }
+        
 }
 //console.log(arr);
 
 document.getElementById("loginForm").onsubmit = function (e){
+    console.log(arr.length)
+    
     e.preventDefault();
     eVal = document.getElementById("email").value;
     pVal = document.getElementById("pass").value;

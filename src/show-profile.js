@@ -11,6 +11,7 @@ if(profileID == -1 || profileID == null){
 
 }else{
     let newP = document.createElement("p")
+    console.log(memArr)
     newP.innerHTML = "Name: " + memArr[profileID].name + "<br>e-mail: " + memArr[profileID].email + "<br>ID: " + memArr[profileID].pass
     div2.appendChild(newP)
 }
