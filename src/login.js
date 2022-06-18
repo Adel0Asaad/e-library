@@ -23,6 +23,7 @@ else{
 
 let tempItemString = sessionStorage.getItem("arrObjKey");
 let arr = JSON.parse(tempItemString);
+console.log(arr)
 if(arr == null){
     window.open("members.html", '_self')
 }
