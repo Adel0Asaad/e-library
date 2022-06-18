@@ -153,6 +153,7 @@ function printMembers(perm){
 let preEmption = sessionStorage.getItem("preEmptionKey")
 let permission = sessionStorage.getItem("loggedKey")
 if (permission == null || permission != 500){
+    console.log("Hello")
     if(preEmption == null){
 
         generateArr();
@@ -169,6 +170,8 @@ if (permission == null || permission != 500){
         preEmption = 1
         sessionStorage.setItem("preEmptionKey", preEmption)
         window.open("login.html", '_self')
+    }else if(preEmption == 1){
+        printMembers(false);
     }
 }else{
     printMembers(true);
