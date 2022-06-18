@@ -1,0 +1,48 @@
+1{
+Desc:
+It is the story of four seekers who arrive at a notoriously unfriendly pile called Hill House: Dr. Montague, an occult scholar looking for solid evidence of a "haunting"; Theodora, the lighthearted assistant; Eleanor, a friendless, fragile young woman well acquainted with poltergeists; and Luke, the future heir of Hill House. At first, their stay seems destined to be merely a spooky encounter with inexplicable phenomena. But Hill House is gathering its powers—and soon it will choose one of them to make its own.
+
+Author: Shirley Jackson, Laura Miller (Introduction)
+
+First published: October 16, 1959
+}
+
+2{
+Desc: 
+Jack Torrance's new job at the Overlook Hotel is the perfect chance for a fresh start. As the off-season caretaker at the atmospheric old hotel, he'll have plenty of time to spend reconnecting with his family and working on his writing. But as the harsh winter weather sets in, the idyllic location feels ever more remote...and more sinister. And the only one to notice the strange and terrible forces gathering around the Overlook is Danny Torrance, a uniquely gifted five-year-old.
+
+Author: Stephen King
+
+First published: January 28, 1977
+}
+
+3{
+Desc:
+The creeping horror of Paul Tremblay meets Tommy Orange’s There There in a dark novel of revenge, cultural identity, and the cost of breaking from tradition in this latest novel from the Jordan Peele of horror literature, Stephen Graham Jones.
+
+Seamlessly blending classic horror and a dramatic narrative with sharp social commentary, The Only Good Indians follows four American Indian men after a disturbing event from their youth puts them in a desperate struggle for their lives. Tracked by an entity bent on revenge, these childhood friends are helpless as the culture and traditions they left behind catch up to them in a violent, vengeful way.
+
+Author: Stephen Graham Jones
+
+First published July 14, 2020
+}
+
+4{
+Desc:
+Aging, self-absorbed rock star Judas Coyne has a thing for the macabre -- his collection includes sketches from infamous serial killer John Wayne Gacy, a trepanned skull from the 16th century, a used hangman's noose, Aleister Crowley's childhood chessboard, etc. -- so when his assistant tells him about a ghost for sale on an online auction site, he immediately puts in a bid and purchases it.
+
+The black, heart-shaped box that Coyne receives in the mail not only contains the suit of a dead man but also his vengeance-obsessed spirit. The ghost, it turns out, is the stepfather of a young groupie who committed suicide after the 54-year-old Coyne callously used her up and threw her away. Now, determined to kill Coyne and anyone who aids him, the merciless ghost of Craddock McDermott begins his assault on the rocker's sanity.
+
+Author: Joe Hill
+
+First published: February 13, 2007
+}
+
+5{
+Desc: 
+The story of misunderstood high school girl Carrie White, her extraordinary telekinetic powers, and her violent rampage of revenge, remains one of the most barrier-breaking and shocking novels of all time.
+
+Author: Stephen King
+
+First published: November 1st 2005
+}

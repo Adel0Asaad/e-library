@@ -1,0 +1,62 @@
+1{
+Desc:
+In the highly anticipated Thinking, Fast and Slow, Kahneman takes us on a groundbreaking tour of the mind and explains the two systems that drive the way we think. System 1 is fast, intuitive, and emotional; System 2 is slower, more deliberative, and more logical. Kahneman exposes the extraordinary capabilities—and also the faults and biases—of fast thinking, and reveals the pervasive influence of intuitive impressions on our thoughts and behavior. The impact of loss aversion and overconfidence on corporate strategies, the difficulties of predicting what will make us happy in the future, the challenges of properly framing risks at work and at home, the profound effect of cognitive biases on everything from playing the stock market to planning the next vacation—each of these can be understood only by knowing how the two systems work together to shape our judgments and decisions.
+
+Engaging the reader in a lively conversation about how we think, Kahneman reveals where we can and cannot trust our intuitions and how we can tap into the benefits of slow thinking. He offers practical and enlightening insights into how choices are made in both our business and our personal lives—and how we can use different techniques to guard against the mental glitches that often get us into trouble. Thinking, Fast and Slow will transform the way you think about thinking.
+
+Author: Daniel Kahneman
+
+First published: October 25, 2011
+}
+
+2{
+Desc:
+This is a book about ten Great Ideas. Each chapter is an attempt to savor one idea that has been discovered by several of the world’s civilizations -­ to question it in light of what we now know from scientific research, and to extract from it the lessons that still apply to our modern lives. It is a book about how to construct a life of virtue, happiness, fulfillment, and meaning.
+
+Author: Jonathan Haidt
+
+First published: December 1, 2006
+}
+
+3{
+Desc:
+Renowned social psychologist and creator of the "Stanford Prison Experiment," Philip Zimbardo explores the mechanisms that make good people do bad things, how moral people can be seduced into acting immorally, and what this says about the line separating good from evil.
+
+The Lucifer Effect explains how—and the myriad reasons why—we are all susceptible to the lure of “the dark side.” Drawing on examples from history as well as his own trailblazing research, Zimbardo details how situational forces and group dynamics can work in concert to make monsters out of decent men and women.
+
+Here, for the first time and in detail, Zimbardo tells the full story of the Stanford Prison Experiment, the landmark study in which a group of college-student volunteers was randomly divided into “guards” and “inmates” and then placed in a mock prison environment. Within a week, the study was abandoned, as ordinary college students were transformed into either brutal, sadistic guards or emotionally broken prisoners.
+
+By illuminating the psychological causes behind such disturbing metamorphoses, Zimbardo enables us to better understand a variety of harrowing phenomena, from corporate malfeasance to organized genocide to how once upstanding American soldiers came to abuse and torture Iraqi detainees in Abu Ghraib. He replaces the long-held notion of the “bad apple” with that of the “bad barrel”—the idea that the social setting and the system contaminate the individual, rather than the other way around.
+
+Author: Philip G. Zimbardo
+
+First published: April 17, 2007
+}
+
+4{
+Desc:
+In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be "positive" all the time so that we can truly become better, happier people.
+
+For decades, we’ve been told that positive thinking is the key to a happy, rich life. "F**k positivity," Mark Manson says. "Let’s be honest, shit is f**ked and we have to live with it." In his wildly popular Internet blog, Manson doesn’t sugarcoat or equivocate. He tells it like it is—a dose of raw, refreshing, honest truth that is sorely lacking today. The Subtle Art of Not Giving a F**k is his antidote to the coddling, let’s-all-feel-good mindset that has infected American society and spoiled a generation, rewarding them with gold medals just for showing up.
+
+Manson makes the argument, backed both by academic research and well-timed poop jokes, that improving our lives hinges not on our ability to turn lemons into lemonade, but on learning to stomach lemons better. Human beings are flawed and limited—"not everybody can be extraordinary, there are winners and losers in society, and some of it is not fair or your fault." Manson advises us to get to know our limitations and accept them. Once we embrace our fears, faults, and uncertainties, once we stop running and avoiding and start confronting painful truths, we can begin to find the courage, perseverance, honesty, responsibility, curiosity, and forgiveness we seek.
+
+There are only so many things we can give a f**k about so we need to figure out which ones really matter, Manson makes clear. While money is nice, caring about what you do with your life is better, because true wealth is about experience. A much-needed grab-you-by-the-shoulders-and-look-you-in-the-eye moment of real-talk, filled with entertaining stories and profane, ruthless humor, The Subtle Art of Not Giving a F**k is a refreshing slap for a generation to help them lead contented, grounded lives.
+
+Author: Mark Manson
+
+First published: September 13, 2016
+}
+
+5{
+Desc:
+Reading this book will make you less sure of yourself—and that’s a good thing. In The Invisible Gorilla, Christopher Chabris and Daniel Simons, creators of one of psychology’s most famous experiments, use remarkable stories and counterintuitive scientific findings to demonstrate an important truth: Our minds don’t work the way we think they do. We think we see ourselves and the world as they really are, but we’re actually missing a whole lot.
+
+Again and again, we think we experience and understand the world as it is, but our thoughts are beset by everyday illusions. We write traffic laws and build criminal cases on the assumption that people will notice when something unusual happens right in front of them. We’re sure we know where we were on 9/11, falsely believing that vivid memories are seared into our minds with perfect fidelity. And as a society, we spend billions on devices to train our brains because we’re continually tempted by the lure of quick fixes and effortless self-improvement.
+ 
+The Invisible Gorilla reveals the myriad ways that our intuitions can deceive us, but it’s much more than a catalog of human failings. Chabris and Simons explain why we succumb to these everyday illusions and what we can do to inoculate ourselves against their effects. Ultimately, the book provides a kind of x-ray vision into our own minds, making it possible to pierce the veil of illusions that clouds our thoughts and to think clearly for perhaps the first time.
+
+Author: Christopher Chabris, Daniel Simons
+
+First published: May 18, 2010
+}

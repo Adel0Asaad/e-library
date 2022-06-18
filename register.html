@@ -1,0 +1,45 @@
+<html>
+	<head>
+        <title>Login</title>
+        <link rel="stylesheet" href="styles/styles1.css" type="text/css">
+		<style>
+			label{
+				color: azure;
+				font-size: 18px;
+			}
+		</style>
+
+	</head>
+	<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url('files/lib1.jpg'); background-size: cover; background-attachment: fixed;">
+		<div>
+			<p style="float:left;">
+				<a href = "index.html">
+					<img src="files/logo.png" width="100vh" height="100vh" >
+				</a>
+			</p>
+		</div>
+
+		<div style="margin: auto; width: 50%;">
+			<br><br>
+		<form id = "regForm" >
+			<fieldset style="margin-top: 100; text-align: center; height: 200px;"><br>
+				<legend style="color: #2BC0E4 ; font-size: 25px;"> Your Details </legend>
+
+                    <label id = "nameLabel"> Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				    <input type = "text" id ="name" required="required"><br><br><br>
+
+				    <label id = "emailLabel"> Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				    <input type = "email" id ="email" required="required"><br><br><br>
+
+				    <label id = "passwordLabel"> Password: </label>
+				    <input type = "password" id="pass" required="required">
+
+			</fieldset>
+            <input type="submit" value="Submit" class="button button-1" >
+
+        </form>
+		
+		<script src="src/register.js"  ></script>
+		</div>
+	</body>
+</html>
