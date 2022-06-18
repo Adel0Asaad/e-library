@@ -11,7 +11,7 @@ document.getElementById("searchForm").onsubmit = function (){
                 console.log ("found");
                 let jsonBookObj = (JSON.stringify(gArr[i][j]));
                 sessionStorage.setItem("bookObjKey", jsonBookObj);
-                window.open("../book-details.html", '_self');
+                window.open("book-details.html", '_self');
             }
         }
     }

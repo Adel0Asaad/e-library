@@ -103,5 +103,5 @@ btnArr.forEach(function(x){
 
 function btnClick(selQ){
     if (selQ == "back")
-    window.open("../book-details.html", '_self');
+    window.open("book-details.html", '_self');
 }

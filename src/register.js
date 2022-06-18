@@ -2,7 +2,7 @@ let nVal, pVal, eVal;
 let tempItemString = sessionStorage.getItem("arrObjKey");
 let arr = JSON.parse(tempItemString);
 if(arr == null){
-    window.open("../members.html", '_self')
+    window.open("members.html", '_self')
 }
 // console.log(arr);
 let rFlag = 0;
@@ -34,7 +34,7 @@ document.getElementById("regForm").onsubmit = function (){
         console.log(arr);
         let jsonArrObj = (JSON.stringify(arr))
         sessionStorage.setItem("arrObjKey", jsonArrObj);
-        window.open("../index.html", '_self');
+        window.open("index.html", '_self');
     }
     rFlag = 0;
 

@@ -26,7 +26,7 @@ function btnClick(selQ){
     console.log(gArr[gSel][bIndx])
     let jsonBookObj = (JSON.stringify(gArr[gSel][bIndx]))
     sessionStorage.setItem("bookObjKey", jsonBookObj);
-    window.open("../book-details.html", '_self');
+    window.open("book-details.html", '_self');
     //console.log(jsonBookObj)
 }
 
