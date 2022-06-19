@@ -55,6 +55,27 @@ div.scrollmenu {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     margin: 8px 10px 12px;
 }
+.bookDeleteButton{
+  height: 35px; position: relative; right: 17%; vertical-align: 310px; z-index: 2;
+}
+.bookDeleteButton:hover{
+  border-radius: 14px;
+  background-position: right center; /*This doesn't work because of the position: absolute; I think.
+   couldn't think of a way to work around it yet tho*/
+  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)
+}
+.userDeleteButton{
+  right: 26%; 
+  position: absolute;
+  height: 38px;
+  margin: auto;
+}
+.userDeleteButton:hover{ 
+  border-radius: 14px;
+  background-position: right center; /*This doesn't work because of the position: absolute; I think.
+   couldn't think of a way to work around it yet tho*/
+  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)
+}
 .button-1 {background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)}
 .button-1:hover { background-position: right center; }
 

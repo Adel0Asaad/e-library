@@ -11,6 +11,7 @@ function bookRBtnClk(){
 function bookDltClk(inputA){
     let bId = parseInt(inputA.charAt(inputA.length-1))
     let gId = inputA.charAt(0).toLowerCase()
+    let targetElement = document.getElementById(inputA)
     switch(gId){
         case "r":
             gId = 0;
@@ -32,6 +33,8 @@ function bookDltClk(inputA){
             return false;
     }
     console.log("gId: ", gId, "\nbId: ", bId)
+    targetElement.parentNode.removeChild(targetElement)
+
     // go to deletebook(), don't make it reload
     // instead here do document.remove("a" element that corresponds to gId and bId)
     deleteBook(gId, bId)
@@ -64,6 +67,7 @@ function printBooks(perm){
                 let bookElementDlt = document.createElement("img")
                 bookElementDlt.src = "files/deleteBook.png"
                 bookElementDlt.style = "height: 35px; position: relative; right: 17%; vertical-align: 310px; z-index: 2;"
+                bookElementDlt.classList.add("bookDeleteButton")
                 bookElement.appendChild(bookElementDlt)
                 bookElementDlt.addEventListener("click", function(){
                     bookDltClk(bookElementDlt.parentNode.id)

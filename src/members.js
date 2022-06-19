@@ -140,11 +140,7 @@ function printMembers(perm){
         if(perm){
             let dltBtn = document.createElement("img")
             dltBtn.setAttribute("src", "files/delete.png")
-            dltBtn.style = "right: 26%; position: absolute;"
-            dltBtn.classList.add("button:hover")
-            dltBtn.classList.add("button-1:hover")
-            dltBtn.setAttribute("height", "38px")
-            dltBtn.setAttribute("margin", "auto")
+            dltBtn.classList.add("userDeleteButton")
             dltBtn.id = "dp" + i
             myP.appendChild(dltBtn)
             // console.log(bookCover)

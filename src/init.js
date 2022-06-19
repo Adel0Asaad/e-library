@@ -38,7 +38,7 @@ export function deleteBook(bGenre, bIndex){
     console.log(tempGArr[bGenre])
     console.log(tempGArr)
     sessionStorage.setItem("bookLibKey", JSON.stringify(tempGArr))
-    document.location.reload()
+    // document.location.reload()
 }
 
 export function generate_book_dbase(){
