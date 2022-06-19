@@ -65,12 +65,21 @@ document.getElementById("dv").appendChild(desc);
 
 //Load Description
 const bookDesc = document.createElement("p");
-var textbd = document.createTextNode(tempItem.desc);
+// var textbd = document.createTextNode(tempItem.desc);
+let descArr = tempItem.desc.split("\n");
+for (let i in descArr){
+
+    var textbd = document.createTextNode(descArr[i]);
+    var spac = document.createElement("br")
+    console.log(textbd);
+    bookDesc.appendChild(textbd);
+    bookDesc.appendChild(spac);
+    
+}
 bookDesc.style.fontSize = "20px";
 bookDesc.style.textAlign = "left";
 bookDesc.style.lineHeight = "1.5";
 bookDesc.style.color = "white";
-bookDesc.appendChild(textbd);
 
 document.getElementById("dv").appendChild(bookDesc);
 

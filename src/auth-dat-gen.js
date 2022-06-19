@@ -29,42 +29,60 @@ for(let i = 0; i < gArr.length; i++){
 }
 if(foundBooksFlag == 0){
     {
-        console.log("Didn't find any books")
-        //load image
-        imgPath = "files/" + "404.png"
+        console.log("hi")
+    }
+}
+else{
+    
+    if ( sameABooks.length > 1 ){
+    const txt = document.createElement("p");
+    var text1 = document.createTextNode("Our library currently has " + sameABooks.length + " books from " + sameABooks[0].author);
+    txt.style.fontSize = "25px";
+    txt.style.textAlign = "center";
+    txt.style.lineHeight = "1.5";
+    txt.style.color = "white";
+    txt.appendChild(text1);
+    document.getElementById("dv").appendChild(txt);
+
+        for(let i = 0; i < sameABooks.length; i++){
+            console.log("Again, I am here with: ", sameABooks[i].author)
+            let bookElement = document.createElement("a");
+            bookElement.id = sameABooks[i].genre.toLowerCase().charAt(0) + sameABooks[i].currIndex
+            let bookClassName = sameABooks[i].genre.toLowerCase() + "Class"
+            bookElement.classList.add(bookClassName)
+            let bookElementImg = document.createElement("img")
+            bookElementImg.style = "z-index: 0; position: relative; width: 232px; height: 350px; z-index: 1"
+            bookElementImg.classList.add("bookImage")
+            bookElementImg.src = "files/" + sameABooks[i].genre.toLowerCase() + "_book_" + parseInt(sameABooks[i].index+1) + ".jpg"
+            bookElement.appendChild(bookElementImg)
+            document.getElementById("div3").appendChild(bookElement)
+        }
+    }
+    else if ( sameABooks.length == 1 ){
         const dv = document.createElement("div");
         dv.id = "dv";
+
+        const txt = document.createElement("p");
+        var text1 = document.createTextNode("Sadly, we don`t currently have more books from " + sameABooks[0].author);
+        txt.style.fontSize = "25px";
+        txt.style.textAlign = "center";
+        txt.style.lineHeight = "1.5";
+        txt.style.color = "white";
+        txt.appendChild(text1);
+        document.getElementById("dv").appendChild(txt);
+
+        imgPath = "files/" + "404.png"
+
         const bookCover = document.createElement("img")
         bookCover.setAttribute("src", imgPath)
-        bookCover.setAttribute("height", "500px")
+        bookCover.setAttribute("height", "200px")
         bookCover.setAttribute("margin", "auto")
     
         document.getElementById("div3").appendChild(dv);
         document.getElementById("dv").appendChild(bookCover);
-    
-        //Load 404 err
-        const bookName = document.createElement("p");
-        var text = document.createTextNode("404 Not Found!");
-        bookName.style.fontSize = "45px";
-        bookName.style.fontWeight = "bold";
-        bookName.style.color = "white";
-        bookName.appendChild(text);
-        
-        document.getElementById("dv").appendChild(bookName);
-    
-        //Load text
-        const err1 = document.createElement("p");
-        var text1 = document.createTextNode("Sadly, we don`t currently have more books from: " + tempItem.author);
-        err1.style.fontSize = "25px";
-        err1.style.textAlign = "center";
-        err1.style.lineHeight = "1.5";
-        err1.style.color = "white";
-        err1.appendChild(text1);
-        document.getElementById("dv").appendChild(err1);
-    
-        //Load text
+
         const err2 = document.createElement("p");
-        var text2 = document.createTextNode("Please back later for updates :)");
+        var text2 = document.createTextNode("Please check later for updates :)");
         err2.style.fontSize = "25px";
         err2.style.textAlign = "center";
         err2.style.lineHeight = "1.5";
@@ -72,126 +90,9 @@ if(foundBooksFlag == 0){
         err2.appendChild(text2);
         document.getElementById("dv").appendChild(err2);
     }
-}else{
-    
-    if ( sameABooks.length > 1 ){
-    const txt = document.createElement("p");
-    var text1 = document.createTextNode("Our library currently have " + sameABooks.length + " books from: " + sameABooks[0].author);
-    txt.style.fontSize = "25px";
-    txt.style.textAlign = "center";
-    txt.style.lineHeight = "1.5";
-    txt.style.color = "white";
-    txt.appendChild(text1);
-    document.getElementById("dv").appendChild(txt);
-    }
-    else if ( sameABooks.length = 1 ){
-        const txt = document.createElement("p");
-        var text1 = document.createTextNode("Our library currently have " + sameABooks.length + " books from: " + sameABooks[0].author);
-        txt.style.fontSize = "25px";
-        txt.style.textAlign = "center";
-        txt.style.lineHeight = "1.5";
-        txt.style.color = "white";
-        txt.appendChild(text1);
-        document.getElementById("dv").appendChild(txt);
-        }
 
-
-
-    for(let i = 0; i < sameABooks.length; i++){
-        console.log("Again, I am here with: ", sameABooks[i].author)
-        let bookElement = document.createElement("a");
-        bookElement.id = sameABooks[i].genre.toLowerCase().charAt(0) + sameABooks[i].currIndex
-        let bookClassName = sameABooks[i].genre.toLowerCase() + "Class"
-        bookElement.classList.add(bookClassName)
-        let bookElementImg = document.createElement("img")
-        bookElementImg.style = "z-index: 0; position: relative; width: 232px; height: 350px; z-index: 1"
-        bookElementImg.classList.add("bookImage")
-        bookElementImg.src = "files/" + sameABooks[i].genre.toLowerCase() + "_book_" + parseInt(sameABooks[i].index+1) + ".jpg"
-        bookElement.appendChild(bookElementImg)
-        document.getElementById("div3").appendChild(bookElement)
-
-
-    }
     console.log(document.getElementById("div3"))
 }
-
-// if (tempItem.author == "Emily Henry"){
-//     //load book image
-//     for (let i = 0; i < 3; i++){
-//         imgPath = "files/" + tempItem.genre + "_book_" + parseInt(tempItem.index+1) + ".jpg"
-//         const dv = document.createElement("div");
-//         dv.id = "dv";
-//         const bookCover = document.createElement("img")
-//         bookCover.setAttribute("src", imgPath)
-//         bookCover.setAttribute("height", "500px")
-//         bookCover.setAttribute("margin", "auto")
-
-//         document.getElementById("div3").appendChild(dv);
-//         document.getElementById("dv").appendChild(bookCover);
-//         tempItem.index = tempItem.index + 1;
-//     }
-// }
-// else if (tempItem.author == "Stephen King"){
-//     //load book image
-//     for (let i = 0; i < 3; i++){
-//         imgPath = "files/" + tempItem.genre + "_book_" + parseInt(tempItem.index+1) + ".jpg"
-//         const dv = document.createElement("div");
-//         dv.id = "dv";
-//         const bookCover = document.createElement("img")
-//         bookCover.setAttribute("src", imgPath)
-//         bookCover.setAttribute("height", "500px")
-//         bookCover.setAttribute("margin", "auto")
-
-//         document.getElementById("div3").appendChild(dv);
-//         document.getElementById("dv").appendChild(bookCover);
-//         tempItem.index = tempItem.index + 1;
-//     }
-// }
-// else{
-
-//     //load image
-//     imgPath = "files/" + "404.png"
-//     const dv = document.createElement("div");
-//     dv.id = "dv";
-//     const bookCover = document.createElement("img")
-//     bookCover.setAttribute("src", imgPath)
-//     bookCover.setAttribute("height", "500px")
-//     bookCover.setAttribute("margin", "auto")
-
-//     document.getElementById("div3").appendChild(dv);
-//     document.getElementById("dv").appendChild(bookCover);
-
-//     //Load 404 err
-//     const bookName = document.createElement("p");
-//     var text = document.createTextNode("404 Not Found!");
-//     bookName.style.fontSize = "45px";
-//     bookName.style.fontWeight = "bold";
-//     bookName.style.color = "white";
-//     bookName.appendChild(text);
-    
-//     document.getElementById("dv").appendChild(bookName);
-
-//     //Load text
-//     const err1 = document.createElement("p");
-//     var text1 = document.createTextNode("Sadly, we don`t currently have more books from: " + tempItem.author);
-//     err1.style.fontSize = "25px";
-//     err1.style.textAlign = "center";
-//     err1.style.lineHeight = "1.5";
-//     err1.style.color = "white";
-//     err1.appendChild(text1);
-
-//     document.getElementById("dv").appendChild(err1);
-
-//     //Load text
-//     const err2 = document.createElement("p");
-//     var text2 = document.createTextNode("Please back later for updates :)");
-//     err2.style.fontSize = "25px";
-//     err2.style.textAlign = "center";
-//     err2.style.lineHeight = "1.5";
-//     err2.style.color = "white";
-//     err2.appendChild(text2);
-//     document.getElementById("dv").appendChild(err2);
-// }
 
 let btnArr = Array.from(document.querySelectorAll("a[id]"))
 btnArr.forEach(function(x){
