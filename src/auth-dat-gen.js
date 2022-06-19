@@ -60,7 +60,6 @@ if(foundBooksFlag == 0){
         err1.style.lineHeight = "1.5";
         err1.style.color = "white";
         err1.appendChild(text1);
-    
         document.getElementById("dv").appendChild(err1);
     
         //Load text
@@ -75,6 +74,29 @@ if(foundBooksFlag == 0){
     }
 }else{
     
+    if ( sameABooks.length > 1 ){
+    const txt = document.createElement("p");
+    var text1 = document.createTextNode("Our library currently have " + sameABooks.length + " books from: " + sameABooks[0].author);
+    txt.style.fontSize = "25px";
+    txt.style.textAlign = "center";
+    txt.style.lineHeight = "1.5";
+    txt.style.color = "white";
+    txt.appendChild(text1);
+    document.getElementById("dv").appendChild(txt);
+    }
+    else if ( sameABooks.length = 1 ){
+        const txt = document.createElement("p");
+        var text1 = document.createTextNode("Our library currently have " + sameABooks.length + " books from: " + sameABooks[0].author);
+        txt.style.fontSize = "25px";
+        txt.style.textAlign = "center";
+        txt.style.lineHeight = "1.5";
+        txt.style.color = "white";
+        txt.appendChild(text1);
+        document.getElementById("dv").appendChild(txt);
+        }
+
+
+
     for(let i = 0; i < sameABooks.length; i++){
         console.log("Again, I am here with: ", sameABooks[i].author)
         let bookElement = document.createElement("a");
@@ -87,7 +109,8 @@ if(foundBooksFlag == 0){
         bookElementImg.src = "files/" + sameABooks[i].genre.toLowerCase() + "_book_" + parseInt(sameABooks[i].index+1) + ".jpg"
         bookElement.appendChild(bookElementImg)
         document.getElementById("div3").appendChild(bookElement)
-        
+
+
     }
     console.log(document.getElementById("div3"))
 }
