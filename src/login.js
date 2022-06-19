@@ -54,7 +54,7 @@ document.getElementById("loginForm").onsubmit = function (e){
     if(eVal == "admin" && pVal == "admin"){
         logClass.logged = 500;
         sessionStorage.setItem("loggedKey", 500);
-        window.open("management.html", '_self');
+        window.open("index.html", '_self');
         return false;
     }
     for (let i = 0; i < arr.length; i++){

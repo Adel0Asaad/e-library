@@ -11,7 +11,7 @@ let tempItem = JSON.parse(tempItemString);
 
 console.log(tempItem)
 
-imgPath = "files/" + tempItem.genre + "_book_" + parseInt(tempItem.index+1) + ".jpg"
+imgPath = "files/" + tempItem.genre.toLowerCase() + "_book_" + parseInt(tempItem.index+1) + ".jpg"
 
 //load book image
 const dv = document.createElement("div");

@@ -16,6 +16,12 @@ function member(n, i, e){
     return member;
 }
 
+function memRBtnClk(){
+    sessionStorage.setItem("arrObjKey", null);
+    generateArr();
+    document.location.reload();
+}
+
 let memArr = [];
 function generateArr(){
     let tempItemString = sessionStorage.getItem("arrObjKey");
@@ -146,6 +152,15 @@ function printMembers(perm){
             // console.log(document.getElementById("dv" + (count)))
             // console.log("hello")
         }
+    }
+    if(perm){
+        const memRBtn = document.createElement("img")
+        memRBtn.src = "files/reset.png"
+        memRBtn.style = "position: absolute; right: 1%; top: 2%; height: 76px;"
+        memRBtn.addEventListener("click", function(e){
+            memRBtnClk()
+        }, false)
+        document.body.appendChild(memRBtn)
     }
     console.log(document.querySelectorAll("img[id]"))
 }

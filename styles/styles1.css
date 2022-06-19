@@ -11,6 +11,7 @@ label.book-label{
     font-weight: bold;
 }
 div.scrollmenu {
+    
     border: 1px solid lightgray;
     overflow: auto;
     white-space: nowrap;
@@ -21,6 +22,7 @@ div.scrollmenu {
     color: white;
     text-align: center;
     padding: 14px;
+    width: 232px;
     text-decoration: none;
   }
   
