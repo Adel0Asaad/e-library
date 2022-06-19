@@ -5,8 +5,8 @@ document.getElementById("searchForm").onsubmit = function (){
     let sVal;
     sVal = document.getElementById("searchTxt").value;
 
-    for (let i = 0; i < 5; i++){
-        for (let j = 0; j < 5; j++){
+    for (let i = 0; i < gArr.length; i++){
+        for (let j = 0; j < gArr[i].length; j++){
             if (sVal.toLowerCase().trim() == gArr[i][j].name.toLowerCase()){
                 console.log ("found");
                 let jsonBookObj = (JSON.stringify(gArr[i][j]));
@@ -18,5 +18,4 @@ document.getElementById("searchForm").onsubmit = function (){
     document.getElementById("searchTxt").value = "";
     console.log(sVal)
     return sVal, false;
-}    
-
+}

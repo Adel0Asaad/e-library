@@ -32,6 +32,8 @@ function bookDltClk(inputA){
             return false;
     }
     console.log("gId: ", gId, "\nbId: ", bId)
+    // go to deletebook(), don't make it reload
+    // instead here do document.remove("a" element that corresponds to gId and bId)
     deleteBook(gId, bId)
 }
 

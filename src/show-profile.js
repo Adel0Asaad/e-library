@@ -8,7 +8,10 @@ if(profileID == -1 || profileID == null){
     window.open("index.html", '_self')
     alert("You're not logged in")
 }else if(profileID == 500){
-
+    let newP = document.createElement("p")
+    console.log(memArr)
+    newP.innerHTML = "You're logged in as an admin.<br>You currently have full administrative control over members and books registered in the system."
+    div2.appendChild(newP)
 }else{
     let newP = document.createElement("p")
     console.log(memArr)
