@@ -26,12 +26,12 @@ let memArr = [];
 function generateArr(){
     let tempItemString = sessionStorage.getItem("arrObjKey");
     let tempItem = JSON.parse(tempItemString);
-    console.log(tempItem)
+    //console.log(tempItem)
     if(tempItem != null){
         console.log("no?")
         return false;
     }
-    console.log("yes.")
+    //console.log("yes.")
     var oldMem = [
         {
         name: 'Dr.Hesham Mahmoud',
@@ -152,6 +152,8 @@ function printMembers(perm){
     if(perm){
         const memRBtn = document.createElement("img")
         memRBtn.src = "files/reset.png"
+        memRBtn.setAttribute("class", "resetBtn");
+        console.log(memRBtn.className)
         memRBtn.style = "position: absolute; right: 1%; top: 2%; height: 76px;"
         memRBtn.addEventListener("click", function(e){
             memRBtnClk()

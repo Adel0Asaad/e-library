@@ -62,7 +62,8 @@ div.scrollmenu {
   border-radius: 14px;
   background-position: right center; /*This doesn't work because of the position: absolute; I think.
    couldn't think of a way to work around it yet tho*/
-  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)
+  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%);
+  cursor: pointer;
 }
 .userDeleteButton{
   right: 26%; 
@@ -74,8 +75,28 @@ div.scrollmenu {
   border-radius: 14px;
   background-position: right center; /*This doesn't work because of the position: absolute; I think.
    couldn't think of a way to work around it yet tho*/
-  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)
+  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%);
+  cursor: pointer;
 }
+.resetBtn:hover{
+  cursor: pointer;
+}
+/*
+Forte Regular
+Bauhaus 93 Regular
+*/
+h1 { 
+  color: #d54d7b; 
+  font-family: "Forte Regular", cursive; 
+  font-size: 165px; 
+  line-height: 160px; 
+  font-weight: normal; 
+  margin-bottom: 0px; 
+  margin-top: 40px; 
+  text-align: center; 
+  text-shadow: -2px 1px 1px #fff; 
+}
+
 .button-1 {background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)}
 .button-1:hover { background-position: right center; }
 

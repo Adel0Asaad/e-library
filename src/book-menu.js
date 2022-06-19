@@ -75,11 +75,21 @@ function printBooks(perm){
             }
             //end of delete button
             document.getElementById(gArr[i][j].genre.toLowerCase() + "Div").appendChild(bookElement)
+
+            document.getElementById(gArr[i][j].genre.toLowerCase() + "Div").addEventListener('wheel', (event) => {
+                event.preventDefault();
+              
+                document.getElementById(gArr[i][j].genre.toLowerCase() + "Div").scrollBy({
+                  left: event.deltaY < 0 ? -30 : 30,
+                });
+              });
         }
     }
     if(perm){
-        const bookRBtn = document.createElement("img")
+        let bookRBtn = document.createElement("img")
         bookRBtn.src = "files/reset.png"
+        bookRBtn.classList.add("resetBtn");
+        console.log(bookRBtn.classList)
         bookRBtn.style = "position: absolute; right: 1%; top: 2%; height: 76px;"
         bookRBtn.addEventListener("click", function(e){
             bookRBtnClk()
